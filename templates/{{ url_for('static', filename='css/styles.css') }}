@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 36px;
+    color: #ff5733; /* 밝은 색상으로 강조 */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 약간의 그림자 효과 */
+    margin-bottom: 20px;
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.lotto-ball {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #ffcc00; /* 공 색상 */
+    color: #000000; /* 번호 색상 */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px; /* 텍스트를 정중앙에 배치 */
+    border-radius: 50%; /* 공 형태 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+}
+
+#results {
+    margin-top: 20px;
+}
